@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | My 8-Bit Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css" id="dark-theme" disabled>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>> My Digital Portfolio_</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Dark Mode</button>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>> About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hello! I'm [Your Name], a level 25 developer with special abilities in coding and problem-solving. I've been exploring the digital landscape for years, questing for new knowledge and defeating bugs along the way.</p>
+                    <p>My journey in technology began when [brief story about how you got interested in tech/programming]. Since then, I've developed a passion for [specific areas of interest in tech].</p>
+                    <p>When I'm not coding, you can find me [your hobbies or interests outside of tech].</p>
+                </div>
+                <div class="about-img">
+                    <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+            </div>
+        </section>
+        
+        <section id="birthplace">
+            <h2>> Hometown Map</h2>
+            <p>I grew up in [Your Hometown], a place that has shaped who I am today. Here are some glimpses of where I come from:</p>
+            <div class="image-gallery">
+                <figure>
+                    <img src="assets/images/birthplace/location1.jpg" alt="Location 1">
+                    <figcaption>[Caption for Location 1]</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/birthplace/location2.jpg" alt="Location 2">
+                    <figcaption>[Caption for Location 2]</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/birthplace/location3.jpg" alt="Location 3">
+                    <figcaption>[Caption for Location 3]</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>> Contact_</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>> Connect_</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/yourname" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="current-year">2025</span> [Your Name] | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/theme-switcher.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

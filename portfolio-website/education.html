@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | My 8-Bit Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css" id="dark-theme" disabled>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>> My Digital Portfolio_</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Dark Mode</button>
+    </header>
+    
+    <main>
+        <section id="education">
+            <h2>> Education Quests</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        <h3>[Your Degree]</h3>
+                        <h4>[Your University] | [Years]</h4>
+                        <p>I completed my main quest at [Your University] and earned a [Your Degree] achievement. Each course unlocked new skills and abilities that I've added to my inventory.</p>
+                        <p>Key courses included [Course 1], [Course 2], and [Course 3].</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                    <div class="timeline-content">
+                        <h3>[Previous Education]</h3>
+                        <h4>[School Name] | [Years]</h4>
+                        <p>Completed my secondary education with a focus on [Your Focus].</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="timeline-content">
+                        <h3>Additional Training</h3>
+                        <ul>
+                            <li>[Certification/Course 1]</li>
+                            <li>[Certification/Course 2]</li>
+                            <li>[Certification/Course 3]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="achievements">
+            <h2>> Achievements Unlocked</h2>
+            <ul class="achievements-list">
+                <li>
+                    <span class="achievement-icon"><i class="fas fa-trophy"></i></span>
+                    <div class="achievement-content">
+                        <h3>[Achievement 1]</h3>
+                        <p>+100 XP - [Brief description of the achievement]</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="achievement-icon"><i class="fas fa-medal"></i></span>
+                    <div class="achievement-content">
+                        <h3>[Achievement 2]</h3>
+                        <p>+200 XP - [Brief description of the achievement]</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="achievement-icon"><i class="fas fa-award"></i></span>
+                    <div class="achievement-content">
+                        <h3>[Achievement 3]</h3>
+                        <p>+300 XP - [Brief description of the achievement]</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>> Contact_</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>> Connect_</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/yourname" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="current-year">2025</span> [Your Name] | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/theme-switcher.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 8-Bit Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css" id="dark-theme" disabled>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>> My Digital Portfolio_</h1>
+        
+        <div class="stat-bars">
+            <div class="stat-container">
+                <div class="stat-label">HP</div>
+                <div class="stat-bar hp-bar">
+                    <div class="stat-fill" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="stat-container">
+                <div class="stat-label">MP</div>
+                <div class="stat-bar mp-bar">
+                    <div class="stat-fill" style="width: 65%"></div>
+                </div>
+            </div>
+            <div class="stat-container">
+                <div class="stat-label">XP</div>
+                <div class="stat-bar xp-bar">
+                    <div class="stat-fill" style="width: 45%"></div>
+                </div>
+            </div>
+            <div class="level-indicator">LVL 25</div>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>   
+        </nav>
+        <button id="theme-toggle">Dark Mode</button>
+    </header>
+    
+    <main>
+        <section id="intro" class="hero">
+            <div class="hero-content">
+                <h2>> Press Start_</h2>
+                <div class="intro-container">
+                    <div class="intro-text-container">
+                        <p class="intro-text">Hello! I'm <span class="highlight">[Your Name]</span>, a passionate developer with expertise in <span class="highlight">[Your Primary Skill]</span>.</p>
+                        
+                        <p>I specialize in creating <span class="highlight">innovative solutions</span> through clean, efficient code and user-centered design.</p>
+                        
+                        <p>Currently focused on <span class="highlight">[Current Focus/Project]</span>, I'm constantly leveling up my skills in <span class="highlight">[Technologies]</span>.</p>
+                        
+                        <div class="cta-buttons">
+                            <a href="about.html" class="cta-button">My Story</a>
+                            <a href="projects.html" class="cta-button">View Projects</a>
+                            <a href="assets/documents/cv.pdf" target="_blank" class="cta-button">Download CV</a>
+                        </div>
+                    </div>
+                    <div class="intro-image">
+                        <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="featured-skills">
+            <h2>> Core Skills_</h2>
+            <div class="skills-showcase">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>[Skill Category 1]</h3>
+                    <p>Proficient in [technologies] with experience in building [type of applications].</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>[Skill Category 2]</h3>
+                    <p>Experienced in creating responsive, user-friendly interfaces with [technologies].</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>[Skill Category 3]</h3>
+                    <p>Knowledge of [specific technologies] for efficient data management and processing.</p>
+                </div>
+            </div>
+            <div class="section-link">
+                <a href="skills.html">View All Skills <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+        
+        <section id="featured-projects">
+            <h2>> Featured Projects_</h2>
+            <div class="projects-showcase">
+                <div class="project-card featured">
+                    <div class="project-img">
+                        <img src="assets/images/project1.jpg" alt="Featured Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>[Featured Project]</h3>
+                        <p>A brief description of your most impressive project and the technologies used.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-link">
+                <a href="projects.html">View All Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about-me">
+                <h3>> About Me_</h3>
+                <p>Developer, problem-solver, and tech enthusiast with a passion for creating innovative digital solutions.</p>
+                <a href="about.html" class="footer-link">Learn More</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>> Contact_</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> [Your Location]</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>> Connect_</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/yourname" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="current-year">2025</span> [Your Name] | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/theme-switcher.js"></script>
+    <script>
+        // Update current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
