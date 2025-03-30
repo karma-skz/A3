@@ -1044,10 +1044,3 @@ body::after {
     filter: brightness(1);
   }
 }
-
-/* Add this to your style.css */
-section, article, main > div {
-    opacity: 1 !important;
-    visibility: visible !important;
-    display: block !important;
-}
