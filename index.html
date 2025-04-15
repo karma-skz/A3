@@ -1,158 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My 8-Bit Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dark-theme.css" id="dark-theme" disabled>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Retro Pixel Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>> My Digital Portfolio_</h1>
-        
-        <div class="stat-bars">
-            <div class="stat-container">
-                <div class="stat-label">HP</div>
-                <div class="stat-bar hp-bar">
-                    <div class="stat-fill" style="width: 80%"></div>
-                </div>
-            </div>
-            <div class="stat-container">
-                <div class="stat-label">MP</div>
-                <div class="stat-bar mp-bar">
-                    <div class="stat-fill" style="width: 65%"></div>
-                </div>
-            </div>
-            <div class="stat-container">
-                <div class="stat-label">XP</div>
-                <div class="stat-bar xp-bar">
-                    <div class="stat-fill" style="width: 45%"></div>
-                </div>
-            </div>
-            <div class="level-indicator">LVL 25</div>
+  <header>
+    <div class="header-left">
+      <h1>My Retro Pixel Home</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="ctf.html">CTF</a>
+      </nav>
+    </div>
+    <button id="darkModeToggle" style="margin-top:1em;font-family:inherit;font-size:1em;padding:0.5em 1em;border-radius:8px;border:none;background:var(--main-bg,#232b3a);color:var(--heading,#b388ff);cursor:pointer;box-shadow:0 2px 8px 0 rgba(60,40,120,0.08);">Toggle Dark Mode</button>
+  </header>
+  <main>
+    <section class="about">
+      <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
+      <p><b>Name:</b> Hemang Joshi<br>
+      <b>Age:</b> 18<br>
+      <b>Gender:</b> Male<br>
+      <b>Interests:</b> Cybersecurity, Web Development</p>
+    </section>
+    <section class="local-pictures">
+      <h2>My Birthplace</h2>
+      <img src="assets/local1.png" alt="Local Picture 1" class="pixel-img">
+      <img src="assets/local2.png" alt="Local Picture 2" class="pixel-img">
+    </section>
+    <section class="education-summary">
+      <h2>Education & Achievements</h2>
+      <ul>
+        <li>Green Wood Public School (till 10th): 94.2%</li>
+        <li>Green Valley International Public School (till 12th): 86%</li>
+        <li>Qualified NSEP, NSEA, UGEE (AIR 113)</li>
+        <li>JEE Mains: 98%ile</li>
+        <li>JEE Advanced: AIR 16045</li>
+        <li>IIIT Hyderabad: Integrated BTech in CSE + MS by Research in Computational Linguistics</li>
+        <li>1st Sem CGPA: 7.67</li>
+      </ul>
+    </section>
+    <section class="courses">
+      <h2>Courses & Grades (1st Sem)</h2>
+      <ul>
+        <li>C Programming: 6/10</li>
+        <li>Discrete Structures: 8/10</li>
+        <li>Digital Systems and Microcontrollers: 8/10</li>
+        <li>Introduction to Linguistics-1: 9/10</li>
+      </ul>
+    </section>
+    <section class="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Bash</li>
+        <li>Git</li>
+      </ul>
+    </section>
+    <section class="skills-logos">
+      <h2>Skills & Technologies</h2>
+      <div class="skills-logos-grid">
+        <div class="skill-logo-item">
+          <img src="assets/html5.png" alt="HTML5 Logo" class="tech-logo">
+          <span>HTML5</span>
         </div>
-        
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>   
-        </nav>
-        <button id="theme-toggle">Dark Mode</button>
-    </header>
-    
-    <main>
-        <section id="intro" class="hero">
-            <div class="hero-content">
-                <h2>> Press Start_</h2>
-                <div class="intro-container">
-                    <div class="intro-text-container">
-                        <p class="intro-text">Hello! I'm <span class="highlight">[Your Name]</span>, a passionate developer with expertise in <span class="highlight">[Your Primary Skill]</span>.</p>
-                        
-                        <p>I specialize in creating <span class="highlight">innovative solutions</span> through clean, efficient code and user-centered design.</p>
-                        
-                        <p>Currently focused on <span class="highlight">[Current Focus/Project]</span>, I'm constantly leveling up my skills in <span class="highlight">[Technologies]</span>.</p>
-                        
-                        <div class="cta-buttons">
-                            <a href="about.html" class="cta-button">My Story</a>
-                            <a href="projects.html" class="cta-button">View Projects</a>
-                            <a href="assets/documents/cv.pdf" target="_blank" class="cta-button">Download CV</a>
-                        </div>
-                    </div>
-                    <div class="intro-image">
-                        <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="featured-skills">
-            <h2>> Core Skills_</h2>
-            <div class="skills-showcase">
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3>[Skill Category 1]</h3>
-                    <p>Proficient in [technologies] with experience in building [type of applications].</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-desktop"></i></div>
-                    <h3>[Skill Category 2]</h3>
-                    <p>Experienced in creating responsive, user-friendly interfaces with [technologies].</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3>[Skill Category 3]</h3>
-                    <p>Knowledge of [specific technologies] for efficient data management and processing.</p>
-                </div>
-            </div>
-            <div class="section-link">
-                <a href="skills.html">View All Skills <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </section>
-        
-        <section id="featured-projects">
-            <h2>> Featured Projects_</h2>
-            <div class="projects-showcase">
-                <div class="project-card featured">
-                    <div class="project-img">
-                        <img src="assets/images/project1.jpg" alt="Featured Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>[Featured Project]</h3>
-                        <p>A brief description of your most impressive project and the technologies used.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-link">
-                <a href="projects.html">View All Projects <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section about-me">
-                <h3>> About Me_</h3>
-                <p>Developer, problem-solver, and tech enthusiast with a passion for creating innovative digital solutions.</p>
-                <a href="about.html" class="footer-link">Learn More</a>
-            </div>
-            
-            <div class="footer-section">
-                <h3>> Contact_</h3>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> [Your Location]</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>> Connect_</h3>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/yourname" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+        <div class="skill-logo-item">
+          <img src="assets/css3.png" alt="CSS3 Logo" class="tech-logo">
+          <span>CSS3</span>
         </div>
-        <div class="copyright">
-            <p>&copy; <span id="current-year">2025</span> [Your Name] | All Rights Reserved</p>
+        <div class="skill-logo-item">
+          <img src="assets/js.png" alt="JavaScript Logo" class="tech-logo">
+          <span>JavaScript</span>
         </div>
-    </footer>
-
-    <script src="js/theme-switcher.js"></script>
-    <script>
-        // Update current year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+      </div>
+    </section>
+    <section class="cv">
+      <a href="assets/cv.pdf" target="_blank">Download my CV (PDF)</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 My Retro Pixel Website</p>
+  </footer>
+  <script>
+    // Dark mode toggle logic
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+    });
+    // On load, set theme from localStorage
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-mode');
+    }
+  </script>
 </body>
 </html>
