@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Education - My Retro Pixel Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 </head>
 <body>
   <header>
@@ -14,7 +15,8 @@
         <a href="index.html">Home</a>
         <a href="education.html">Education</a>
         <a href="projects.html">Projects</a>
-        <a href="ctf.html">CTF</a>
+        <a href="text-analyzer.html">Text Analyzer</a>
+        <!-- <a href="ctf.html">CTF</a> -->
       </nav>
     </div>
     <button id="darkModeToggle" style="margin-top:1em;font-family:inherit;font-size:1em;padding:0.5em 1em;border-radius:8px;border:none;background:var(--main-bg,#3a2e5c);color:var(--heading,#ff80ab);cursor:pointer;box-shadow:0 2px 8px 0 rgba(60,40,120,0.08);">Toggle Dark Mode</button>
@@ -34,7 +36,7 @@
           <span class="timeline-dot"></span>
           <div class="timeline-content">
             <h3>Green Valley International Public School</h3>
-            <p>12th Grade, 86%</p>
+            <p>12th Grade, 89%</p>
           </div>
         </div>
         <div class="timeline-item left">
@@ -67,6 +69,9 @@
         </div>
       </div>
     </section>
+    <section class="cv" style="display: flex; justify-content: center; align-items: center; margin: 2.5em 0;">
+      <a href="assets/cv.pdf" target="_blank" class="cv-btn">Download my CV (PDF)</a>
+    </section>
     <section class="courses">
       <h2>Courses & Grades, IIIT H</h2>
       <h3>1st Semester</h3>
@@ -88,7 +93,12 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 My Retro Pixel Website</p>
+    <div class="footer-contacts">
+      <a href="https://github.com/hemangjoshi37" target="_blank" title="GitHub"><i class="devicon-github-original"></i><span class="footer-label">GitHub</span></a>
+      <a href="https://linkedin.com/in/hemangjoshi37" target="_blank" title="LinkedIn"><i class="devicon-linkedin-plain"></i><span class="footer-label">LinkedIn</span></a>
+      <a href="https://instagram.com/hemang.joshi.37" target="_blank" title="Instagram"><i class="devicon-instagram-plain"></i><span class="footer-label">Instagram</span></a>
+      <a href="mailto:hemangjoshi.37@gmail.com" title="Email"><i class="devicon-google-plain"></i><span class="footer-label">Email</span></a>
+    </div>
   </footer>
   <script>
     // Dark mode toggle logic
@@ -115,5 +125,6 @@
     window.addEventListener('scroll', revealTimelineItems);
     window.addEventListener('DOMContentLoaded', revealTimelineItems);
   </script>
+  <script src="assets/analytics.js"></script>
 </body>
 </html>

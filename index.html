@@ -5,32 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Retro Pixel Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 </head>
 <body>
   <header>
     <div class="header-left">
-      <h1>My Retro Pixel Home</h1>
+      <h1>My Portfolio</h1>
       <nav>
         <a href="index.html">Home</a>
         <a href="education.html">Education</a>
         <a href="projects.html">Projects</a>
-        <a href="ctf.html">CTF</a>
+        <a href="text-analyzer.html">Text Analyzer</a>
       </nav>
     </div>
     <button id="darkModeToggle" style="margin-top:1em;font-family:inherit;font-size:1em;padding:0.5em 1em;border-radius:8px;border:none;background:var(--main-bg,#232b3a);color:var(--heading,#b388ff);cursor:pointer;box-shadow:0 2px 8px 0 rgba(60,40,120,0.08);">Toggle Dark Mode</button>
   </header>
   <main>
     <section class="about">
-      <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
-      <p><b>Name:</b> Hemang Joshi<br>
-      <b>Age:</b> 18<br>
-      <b>Gender:</b> Male<br>
-      <b>Interests:</b> Cybersecurity, Web Development</p>
+      <img src="assets/images/profile.jpeg" alt="Profile pic" class="profile-pic">
+      <p>
+        I am Hemang Joshi, an 18-year-old student from Gurgaon, India.<br><br>
+        Currently, I am pursuing a BTech in Computer Science and Engineering along with an MS by Research in Computational Linguistics at IIIT Hyderabad.<br><br>
+        My interests include cybersecurity and participating in CTFs. I have qualified several national-level exams such as NSEP, NSEA, and UGEE, and achieved a 98 percentile in JEE Mains and AIR 16045 in JEE Advanced.<br><br>
+        I am passionate about technology, learning new skills, and building innovative projects.
+      </p>
     </section>
     <section class="local-pictures">
       <h2>My Birthplace</h2>
-      <img src="assets/local1.png" alt="Local Picture 1" class="pixel-img">
-      <img src="assets/local2.png" alt="Local Picture 2" class="pixel-img">
+      <div class="local-pictures-images">
+        <img src="assets/images/gurgaon.webp" alt="Local Picture 1" class="pixel-img">
+        <img src="assets/images/gurgaon2.avif" alt="Local Picture 2" class="pixel-img">
+      </div>
     </section>
     <section class="education-summary">
       <h2>Education & Achievements</h2>
@@ -53,43 +58,58 @@
         <li>Introduction to Linguistics-1: 9/10</li>
       </ul>
     </section>
-    <section class="skills">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Bash</li>
-        <li>Git</li>
-      </ul>
-    </section>
     <section class="skills-logos">
-      <h2>Skills & Technologies</h2>
+      <h2>Technical Skills</h2>
       <div class="skills-logos-grid">
         <div class="skill-logo-item">
-          <img src="assets/html5.png" alt="HTML5 Logo" class="tech-logo">
+          <img src="assets/images/HTML.png" alt="HTML5 Logo" class="tech-logo">
           <span>HTML5</span>
         </div>
         <div class="skill-logo-item">
-          <img src="assets/css3.png" alt="CSS3 Logo" class="tech-logo">
+          <img src="assets/images/CSS.png" alt="CSS3 Logo" class="tech-logo">
           <span>CSS3</span>
         </div>
         <div class="skill-logo-item">
-          <img src="assets/js.png" alt="JavaScript Logo" class="tech-logo">
+          <img src="assets//images/JS.png" alt="JavaScript Logo" class="tech-logo">
           <span>JavaScript</span>
+        </div>
+        <div class="skill-logo-item">
+          <img src="assets//images/C.png" alt="C Logo" class="tech-logo">
+          <span>C</span>
+        </div>
+        <div class="skill-logo-item">
+          <img src="assets//images/CPP.png" alt="CPP Logo" class="tech-logo">
+          <span>C++</span>
+        </div>
+        <div class="skill-logo-item">
+          <img src="assets//images/PY.png" alt="py Logo" class="tech-logo">
+          <span>Python</span>
+        </div>
+        <div class="skill-logo-item">
+          <img src="assets//images/sql.png" alt="SQL Logo" class="tech-logo">
+          <span>SQL</span>
+        </div>
+        <div class="skill-logo-item">
+          <img src="assets//images/bash.png" alt="bash Logo" class="tech-logo">
+          <span>Bash</span>
+        </div>
+        <div class="skill-logo-item">
+          <img src="assets//images/git.png" alt="git Logo" class="tech-logo">
+          <span>Git</span>
         </div>
       </div>
     </section>
     <section class="cv">
-      <a href="assets/cv.pdf" target="_blank">Download my CV (PDF)</a>
+      <a href="assets/docs/cv.pdf" target="_blank">Download my CV (PDF)</a>
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 My Retro Pixel Website</p>
+    <div class="footer-contacts">
+      <a href="https://github.com/hemangjoshi37" target="_blank" title="GitHub"><i class="devicon-github-original"></i><span class="footer-label">GitHub</span></a>
+      <a href="https://linkedin.com/in/hemangjoshi37" target="_blank" title="LinkedIn"><i class="devicon-linkedin-plain"></i><span class="footer-label">LinkedIn</span></a>
+      <a href="https://instagram.com/hemang.joshi.37" target="_blank" title="Instagram"><i class="devicon-instagram-plain"></i><span class="footer-label">Instagram</span></a>
+      <a href="mailto:hemangjoshi.37@gmail.com" title="Email"><i class="devicon-google-plain"></i><span class="footer-label">Email</span></a>
+    </div>
   </footer>
   <script>
     // Dark mode toggle logic
@@ -102,6 +122,48 @@
     if (localStorage.getItem('theme') === 'light') {
       document.body.classList.add('light-mode');
     }
+
+    // --- Analytics Script: Capture Clicks and Page Views ---
+    (function() {
+      // Helper to get a readable type for the event target
+      function getObjectType(target) {
+        if (target.tagName === 'IMG') return 'image';
+        if (target.tagName === 'A' && target.href.endsWith('.pdf')) return 'pdf-link';
+        if (target.tagName === 'A') return 'hyperlink';
+        if (target.tagName === 'BUTTON' || target.type === 'submit') return 'button';
+        if (target.tagName === 'INPUT') return 'input';
+        if (target.tagName === 'SELECT') return 'drop-down';
+        if (target.tagName === 'TEXTAREA') return 'textarea';
+        if (target.tagName === 'P') return 'text';
+        if (target.classList.contains('profile-pic')) return 'profile-picture';
+        if (target.classList.contains('pixel-img')) return 'local-picture';
+        return target.tagName.toLowerCase();
+      }
+
+      // Log a page view for each main section
+      window.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('section').forEach(section => {
+          let type = 'view';
+          let objType = section.className || 'section';
+          let timestamp = new Date().toISOString();
+          console.log(`${timestamp} , ${type} , ${objType}`);
+        });
+      });
+
+      // Log all click events
+      document.addEventListener('click', function(e) {
+        let target = e.target;
+        // If clicking inside a link/image/button, bubble up to the clickable parent
+        while (target && target !== document.body && !target.tagName.match(/^(A|BUTTON|IMG|INPUT|SELECT|TEXTAREA|P)$/i)) {
+          target = target.parentElement;
+        }
+        if (!target) return;
+        let type = 'click';
+        let objType = getObjectType(target);
+        let timestamp = new Date().toISOString();
+        console.log(`${timestamp} , ${type} , ${objType}`);
+      }, true);
+    })();
   </script>
 </body>
 </html>

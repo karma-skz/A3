@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Analyzer - My Retro Pixel Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>Text Analyzer</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="text-analyzer.html">Text Analyzer</a>
+      </nav>
+    </div>
+    <button id="darkModeToggle" style="margin-top:1em;font-family:inherit;font-size:1em;padding:0.5em 1em;border-radius:8px;border:none;background:var(--main-bg,#232b3a);color:var(--heading,#b388ff);cursor:pointer;box-shadow:0 2px 8px 0 rgba(60,40,120,0.08);">Toggle Dark Mode</button>
+  </header>
+  <main>
+    <section class="text-analyzer">
+      <h2>Text Analyzer</h2>
+      <textarea id="analyzer-input" rows="16" style="width:100%;max-width:900px;font-size:1em;"></textarea>
+      <br>
+      <button id="analyze-btn" class="cv-btn" style="margin-top:1em;">Analyze Text</button>
+      <div id="analyzer-output" style="margin-top:2em; display:none;"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-contacts">
+      <a href="https://github.com/hemangjoshi37" target="_blank" title="GitHub"><i class="devicon-github-original"></i><span class="footer-label">GitHub</span></a>
+      <a href="https://linkedin.com/in/hemangjoshi37" target="_blank" title="LinkedIn"><i class="devicon-linkedin-plain"></i><span class="footer-label">LinkedIn</span></a>
+      <a href="https://instagram.com/hemang.joshi.37" target="_blank" title="Instagram"><i class="devicon-instagram-plain"></i><span class="footer-label">Instagram</span></a>
+      <a href="mailto:hemangjoshi.37@gmail.com" title="Email"><i class="devicon-google-plain"></i><span class="footer-label">Email</span></a>
+    </div>
+  </footer>
+  <script>
+    // Dark mode toggle logic
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+    });
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-mode');
+    }
+  </script>
+  <script src="assets/text-analyzer.js"></script>
+  <script src="assets/analytics.js"></script>
+</body>
+</html>

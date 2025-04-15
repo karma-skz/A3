@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - My Retro Pixel Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>Projects</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <!-- <a href="ctf.html">CTF</a> -->
+      </nav>
+    </div>
+    <button id="darkModeToggle" style="margin-top:1em;font-family:inherit;font-size:1em;padding:0.5em 1em;border-radius:8px;border:none;background:var(--main-bg,#3a2e5c);color:var(--heading,#ff80ab);cursor:pointer;box-shadow:0 2px 8px 0 rgba(60,40,120,0.08);">Toggle Dark Mode</button>
+  </header>
+  <main>
+    <section class="achievements">
+      <h2>My Projects</h2>
+      <!-- <ul>
+        <li><img src="assets/images/project1.png" alt="Project 1 Screenshot" style="width:32px;height:32px;vertical-align:middle;margin-right:0.5em;"> <b>Project Name 1</b> &mdash; <a href="assets/docs/project1_report.pdf" target="_blank">Report</a></li>
+        <li><img src="assets/images/project2.png" alt="Project 2 Screenshot" style="width:32px;height:32px;vertical-align:middle;margin-right:0.5em;"> <b>Project Name 2</b> &mdash; <a href="assets/docs/project2_report.pdf" target="_blank">Report</a></li>
+        Add more projects as needed
+      </ul> -->
+    </section>
+  </main>
+  <footer>
+    <div class="footer-contacts">
+      <a href="https://github.com/karma-skz" target="_blank" title="GitHub"><i class="devicon-github-original"></i><span class="footer-label">GitHub</span></a>
+      <a href="https://www.linkedin.com/in/hemang-joshi-80b805314/" target="_blank" title="LinkedIn"><i class="devicon-linkedin-plain"></i><span class="footer-label">LinkedIn</span></a>
+      <a href="https://www.instagram.com/karma.skz/" target="_blank" title="Instagram"><i class="devicon-instagram-plain"></i><span class="footer-label">Instagram</span></a>
+      <a href="mailto:hemang.joshi@research.iiit.ac.in" title="Email"><i class="devicon-google-plain"></i><span class="footer-label">Email</span></a>
+    </div>
+  </footer>
+  <script>
+    // Dark mode toggle logic
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+    });
+    // On load, set theme from localStorage
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-mode');
+    }
+  </script>
+  <script src="assets/analytics.js"></script>
+</body>
+</html>
